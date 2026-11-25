@@ -1,8 +1,47 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="public/assets/aistudio/iags-logo-banner-dark-v3.png" />
+    <source media="(prefers-color-scheme: light)" srcset="public/assets/aistudio/iags-logo-banner-light-v3.png" />
+    <img alt="IAGS — Industrial Automation Governance Studio" src="public/assets/aistudio/iags-logo-banner-light-v3.png" width="460" />
+  </picture>
+</p>
+
 # IAGS — Industrial Automation Governance Studio
 
 **Industrial Automation Governance Studio (IAGS)** is a comprehensive, vendor-agnostic web platform designed to centralize, visualize, simulate, and operationalize **Operational Technology (OT) Cybersecurity and Industrial Automation Service Governance**.
 
 Aligned with **ISA/IEC 62443-2-1**, **ISO/IEC 27001**, **ISO/IEC 20000**, and **ITIL v4**, IAGS transforms static industrial cybersecurity policies into an interactive studio combining real-time governance dashboards, animated procedure-interaction maps, Purdue-model change impact simulation, critical OT asset lifecycle tracking, vulnerability/compliance pipelines, and 15 complete normative procedures ready for audit and export.
+
+---
+
+## Visual Tour & Live Snapshots
+
+### Executive Dashboard — Adaptive Light & Dark Modes
+Real-time KPIs across all 15 IAGS procedures, domain adherence vs. target, operational pulse (Changes, OT Incidents & SIEM Alerts), vulnerability SLA windows, and critical asset reconciliation — with instant **PT / EN / ES** language switching and dedicated Light & Dark visual identities for both corporate offices and 24/7 OT control rooms.
+
+| Light Mode | Dark Mode |
+| :---: | :---: |
+| ![Executive Dashboard — Light Mode](docs/screenshots/01-executive-dashboard-light.png) | ![Executive Dashboard — Dark Mode](docs/screenshots/02-executive-dashboard-dark.png) |
+
+### Interactive Map & Workflow Simulation (15 Procedures)
+Explore real upstream/downstream dependencies across `IAGS-01` through `IAGS-15` or play animated end-to-end operational scenarios (such as *SIEM Intrusion Alert to Full Recovery*, *Critical CVE to Plant Patch*, *Contractor Offboarding*, and *Critical Infrastructure Disruption*), complete with fullscreen expansion (`Maximize`).
+
+![Interactive Map & Workflow Simulation](docs/screenshots/03-interaction-studio-dark.png)
+
+### Change Impact Simulator — OT Assets, Plants & Systems
+Select any target industrial asset (PLC, SCADA, HMI, Historian, Firewall, Industrial Switch, UPS) and proposed intervention (*Logic/Firmware*, *Patch/Reboot*, *Power/Outage*, *Network/FW*, *Failure/Crisis*) to visualize direct and cascading blast radius across connected OT assets, affected industrial plants, RTO targets, and mandatory OT-CAB governance gates before submitting an RFC.
+
+![Change Impact Simulator](docs/screenshots/04-impact-simulator-light.png)
+
+### Dedicated Procedure Workspaces (`IAGS-01` – `IAGS-15`)
+Every procedure has its own dedicated view highlighting the **Primary Accountable Owner**, **Approver / Oversight**, **Executing Teams**, **Interfaces & Stakeholders**, operational summary, normative references, interactive **Correlation Map** (clickable inputs/outputs), full normative text reader, and one-click `.md` copy/download.
+
+![Individual Procedure Workspace — IAGS-03 Change Management](docs/screenshots/05-procedure-detail-light.png)
+
+### Vulnerabilities (TVM/TCM), Safe OT Patching & Audits
+Track CVSS remediation SLAs (`60d / 90d / 120d / 180d`), enforce the safe 5-stage OT patching sequence (*Vendor Approval → Off-line Test → Stand-by Deployment → Production via RFC → Mitigated/Closed*), flag safety-excluded PLC/UPS pentest assets, and manage action plans and periodic compliance audits.
+
+![Vulnerabilities, Patching & Audits](docs/screenshots/06-compliance-audits-dark.png)
 
 ---
 
@@ -83,6 +122,9 @@ All procedures are sanitized, standardized, and structured under the **IAGS** fr
 ## Project Structure
 
 ```text
+├── README.md                            # Project documentation & visual tour
+├── docs/
+│   └── screenshots/                     # Live application snapshots embedded in README
 ├── index.html                           # Application entry HTML, fonts, and theme-aware icons
 ├── metadata.json                        # Application metadata
 ├── public/
