@@ -1,0 +1,6 @@
+{
+  "name": "AegisOT — OT Cybersecurity Governance",
+  "description": "Industrial Automation Governance Studio (IAGS) — OT cybersecurity governance platform aligned with ISA/IEC 62443-2-1 and ISO/IEC 27001, integrating 15 sanitized governance procedures, interactive dashboards, animated process flows, OT asset lifecycle control, and compliance audits.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
